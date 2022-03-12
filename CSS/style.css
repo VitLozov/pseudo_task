@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    background-color: #004282;
+    padding: 25px 40px;
+}
+.maintext{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+h1{
+    line-height: 70px;
+}
+.letter::first-letter{
+    font-size: 35px;
+    color: red;
+    font-style: italic;
+}
+.block{
+    background-color: white;
+    padding: 25px;
+    color: black;
+    margin-bottom: 15px;
+    width: 800px;
+}
+.line::first-line{
+    color: red;
+    font-style: italic;
+}
+.select p::selection{
+    background-color: green;
+    color: white;
+}
+.add p::before{
+    content: 'Начало: ' ;
+    color: red;
+}
+.add p::after{
+    content: ' :Конец! ' ;
+    color: green;
+}
+li{
+    color: green;
+}
+li:not(:last-child){
+    color: black;
+}
+li:first-child{
+    color: red;
+}
+div:nth-of-type(5){
+    width: 400px;
+}
+.block2{
+    background-color: #f2f2f2;
+    max-width: 1000px;
+    padding: 25px 45px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+    font-size: 12px;
+}
+.block3_1{
+    /*display: flex;*/
+}
+
+.img{
+    width: 100%;
+}
+.img-qa{
+    width: 90px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.link1:link{
+    color: darkslategray;
+}
+.link1:hover{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nuzhna_pomosh{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+h4{
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 66, 130, 1);
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 66, 130, 0.2);
+}
+.img_stores{
+    width: 90px;
+    display: inline-block;
+}
+.btn{
+    padding: 9px 13px;
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.btn:hover{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.block3:not(:first-child){
+    border-left: 1px solid black;
+}
+.block3{
+    padding: 0 30px 10px 20px;
+    width: 33%;
+    box-sizing: border-box;
+
+}
+.inp{
+    overflow: hidden;
+    outline: none;
+    height: 0;
+    width: 0;
+    /*display: none;*/
+}
+.label1::before{
+    content: 'Click to change';
+    display: block;
+}
+.inp:checked ~ .label1:before{
+    content: 'Cool!';
+    background-color: blue;
+}
+
+.label1{
+    width: 150px;
+    height: 30px;
+    display: block;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+.label1:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.a333{
+    height: 100px;
+    width: 200px;
+    background-color: red;
+
+}
+.inp:checked ~ .a333:before{
+    content: 'click again to change back';
+    background-color: blue;
+}
+.inp:checked ~ .a333{
+
+    background-color: blue;
+}
+.last{
+    margin-top: 30px;
+}
